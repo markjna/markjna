@@ -1,0 +1,29 @@
+h1 {
+	padding-left: 0.5em;
+}
+
+/*img {
+	width: 100%;
+	height: auto;
+	padding: 0.5em;
+}
+
+div {
+	display: block;
+	width: 100%;
+}
+
+tr {
+	display: block;
+	width: 100%;
+}
+
+td {
+	flex-grow: all;
+}*/
+
+img {
+	width: 30%;
+	float: left;
+	margin: 1.66%;
+}
