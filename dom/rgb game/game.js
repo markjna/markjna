@@ -13,7 +13,7 @@ for (var i = 0; i < modeButtons.length; i++){
 		modeButtons[0].classList.remove("selected");
 		modeButtons[1].classList.remove("selected");
 		this.classList.add("selected");
-		this.textContent === "easy" ? numSquares = 3: numSquares = 6;
+		this.textContent === "Easy" ? numSquares = 3 : numSquares = 6;
 		// if(this.textContent === "Easy"){
 		// 	numSquares = 3;
 		// } else {
@@ -27,6 +27,8 @@ function reset(){
 	colors = generateRandomColors(numSquares);
 	pickedColor = pickColor();
 	colorDisplay.textContent = pickedColor;
+	resetButton.textContent = "New Colors";
+	messageDisplay.textContent = "";
 	for (var i = 0; i < squares.length; i++){
 		if(colors[i]){
 			squares[i].style.display = "block";
@@ -36,8 +38,6 @@ function reset(){
 		}
 	}
 	h1.style.backgroundColor = "steelblue";
-	resetButton.textContent = "New Colors";
-	messageDisplay.textContent = "";
 }
 
 // easyBtn.addEventListener("click", function(){
@@ -70,19 +70,20 @@ function reset(){
 // });
 
 resetButton.addEventListener("click", function(){
-	// generate all colors
-	colors = generateRandomColors(numSquares);
-	// pick a new random color from array
-	pickedColor = pickColor();
-	// change colorDisplay to match picked color
-	colorDisplay.textContent = pickedColor;
-	// change colors of squares
-	for (var i = 0; i < squares.length; i++){
-		squares[i].style.backgroundColor = colors[i];
-	}
-	h1.style.backgroundColor = "steelblue";
-	this.textContent = "New Colors";
-	messageDisplay.textContent = "";
+	// // generate all colors
+	// colors = generateRandomColors(numSquares);
+	// // pick a new random color from array
+	// pickedColor = pickColor();
+	// // change colorDisplay to match picked color
+	// colorDisplay.textContent = pickedColor;
+	// // change colors of squares
+	// for (var i = 0; i < squares.length; i++){
+	// 	squares[i].style.backgroundColor = colors[i];
+	// }
+	// h1.style.backgroundColor = "steelblue";
+	// this.textContent = "New Colors";
+	// messageDisplay.textContent = "";
+	reset();
 });
 
 colorDisplay.textContent = pickedColor;
