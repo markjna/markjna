@@ -1,6 +1,19 @@
 var todos = [];
+
 $("input").on("keypress", function(event){
 	if (event.which === 13) {
-		$("p")
+		todos.push();
 	}
 });
+
+$(".plusTodo").click(function(){
+	$("input").fadeToggle(300);
+});
+
+$("p").click(function(){
+	$(this).css({
+		"text-decoration": "line-through",
+		"color": "gray"
+	});
+});
+

@@ -3,29 +3,35 @@
 	width: 300px;
 	margin: 0 auto;
 	margin-top: 100px;
-	text-indent: 20px;
+	text-indent: 15px;\
 }
 
 h1 {
 	background: steelblue;
 	color: white;
 	text-transform: uppercase;
-	margin-bottom: 0;
+	margin: 0;
+	font-size: 1em;
+	font-family: Lato;
+	padding: 0.4em 0 0.4em 0;
+	font-weight: normal;
 }
 
 input {
 	background: #f2f4f9;
 	border: none;
-	text-indent: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	text-indent: 15px;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
 	width: 100%;
+	opacity: 0.6;
 }
 
 p {
 	margin: 0;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	font-size: 0.8em;
 }
 
 p:nth-child(odd) {
@@ -34,4 +40,16 @@ p:nth-child(odd) {
 
 body {
 	background: linear-gradient(to right, #32fbff, #eaffc4);
+}
+
+button {
+	outline: none;
+	border: none;
+	background: steelblue;
+	float: right;
+	margin: 0 0.5em 0 0.5em;
+}
+
+.fa-plus {
+	color: white;
 }
