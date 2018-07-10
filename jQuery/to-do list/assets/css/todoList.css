@@ -27,14 +27,14 @@ input {
 	opacity: 0.6;
 }
 
-p {
+li {
 	margin: 0;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-size: 0.8em;
 }
 
-p:nth-child(odd) {
+li:nth-child(odd) {
 	background-color: white;
 }
 

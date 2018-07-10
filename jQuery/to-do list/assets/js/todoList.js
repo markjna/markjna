@@ -10,7 +10,7 @@ $(".plusTodo").click(function(){
 	$("input").fadeToggle(300);
 });
 
-$("p").click(function(){
+$("li").click(function(){
 	$(this).css({
 		"text-decoration": "line-through",
 		"color": "gray"
