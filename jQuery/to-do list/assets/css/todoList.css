@@ -1,19 +1,18 @@
 .container {
-	background: #f2f4f9;
-	width: 300px;
-	margin: 0 auto;
-	margin-top: 100px;
-	text-indent: 15px;\
+	background: #f7f7f7;
+	width: 360px;
+	margin: 100px auto;
+	text-indent: 15px;
+	box-shadow: 0 0 10px rgba(0,0,0, 0.3);
 }
 
 h1 {
-	background: steelblue;
+	background: #2980b9;
 	color: white;
 	text-transform: uppercase;
 	margin: 0;
-	font-size: 1em;
-	font-family: Lato;
-	padding: 0.4em 0 0.4em 0;
+	font-size: 24px;
+	padding: 10px 20px;
 	font-weight: normal;
 }
 
@@ -40,6 +39,7 @@ li:nth-child(odd) {
 
 body {
 	background: linear-gradient(to right, #32fbff, #eaffc4);
+	font-family: Lato;
 }
 
 button {
@@ -52,4 +52,15 @@ button {
 
 .fa-plus {
 	color: white;
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
